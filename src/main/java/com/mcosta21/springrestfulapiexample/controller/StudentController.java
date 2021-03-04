@@ -51,7 +51,6 @@ public class StudentController {
 
     @PostMapping("/")
     public void post(@RequestBody StudentRequest _student) {
-        
         Student student = new Student(_student.getId(), _student.getName(), _student.getAddress(), null);
         _studentRepository.save(student);
     }
