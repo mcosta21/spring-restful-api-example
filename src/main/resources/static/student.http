@@ -1,0 +1,25 @@
+GET http://localhost:8080/student/ HTTP/1.1
+content-type: application/json
+
+###
+POST http://localhost:8080/student/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Flávia",
+    "address": "Rua 2"
+}
+
+###
+POST http://localhost:8080/student/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "João",
+    "address": "Rua 2",
+    "scroolClass": "1"
+}
+
+###
+GET http://localhost:8080/student/3 HTTP/1.1
+content-type: application/json
